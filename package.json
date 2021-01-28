@@ -4,7 +4,9 @@
   "description": "Hobsons QA Engineer Cypress challenge",
   "main": "",
   "scripts": {
-    "start": "cypress open"
+    "start": "cypress open",
+    "chromeTest": "cypress run --headed --browser chrome",
+    "firefoxTest": "cypress run --headed --browser firefox"
   },
   "dependencies": {},
   "devDependencies": {

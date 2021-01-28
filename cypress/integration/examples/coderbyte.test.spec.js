@@ -21,7 +21,7 @@ describe('Coderbyte Test', function () {
         home.intersectLearnMoreBtn().click({ force: true })
         cy.url().should('include', '/solution/intersect/')
     })
-    it.only('click on each state and assert popup text', () => {
+    it('click on each state and assert popup text', () => {
         const intersect = new intersectPage()
 
         cy.visit('/solution/intersect/')
