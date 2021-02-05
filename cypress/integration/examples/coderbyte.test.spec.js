@@ -16,10 +16,13 @@ describe('Coderbyte Test', function () {
         const home = new homePage()
 
         cy.visit('/')
+        // Assert company logo
         home.logo().should('be.visible')
         home.alert().click()
+        // Assert Page title
         home.title().should('eq', this.data.title)
         home.intersectLearnMoreBtn().click({ force: true })
+        // Assert Url to match new page
         cy.url().should('include', '/solution/intersect/')
     })
     it('click on each state and assert popup text', () => {
